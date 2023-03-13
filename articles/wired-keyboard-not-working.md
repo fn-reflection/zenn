@@ -1,8 +1,8 @@
 ---
 title: "キーボードが反応しない時に試したこと"
 emoji: "⌨️"
-type: "tech"
-topics: ["keyboard", "usb", "linux"]
+type: "idea"
+topics: ["ポエム", "keyboard", "usb", "linux"]
 published: true
 published_at: 2023-03-13 06:00
 ---
