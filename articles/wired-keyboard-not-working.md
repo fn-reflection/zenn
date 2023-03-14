@@ -5,6 +5,7 @@ type: "idea"
 topics: ["ポエム", "keyboard", "usb", "linux"]
 published: true
 published_at: 2023-03-13 06:00
+publication_name: "paiza"
 ---
 
 ※ 技術要素は登場しますが、ちょっとした推理物としてお楽しみください。
