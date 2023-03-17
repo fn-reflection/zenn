@@ -6,7 +6,7 @@ topics: ["security", "password", "keepass", "keepassxc", "secret"]
 published: false
 ---
 
-[前回の記事](https://zenn.dev/naokifujita/articles/wired-keyboard-not-working)では、認証方法に関する整理とパスワード管理のツールについてシンプルかつ網羅的に記述しました。  
+[前回の記事](https://zenn.dev/naokifujita/articles/password-explained)では、認証方法に関する整理とパスワード管理のツールについてシンプルかつ網羅的に記述しました。  
 今回の記事では、[KeePassXC](https://keepassxc.org/)というツールがどのように活用できるのかをシンプルかつ要点を外さず紹介するとともに、パスワード管理に対する議論の基礎としても使えるように構成しています。
 
 
