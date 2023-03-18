@@ -5,6 +5,7 @@ type: "tech"
 topics: ["security", "password", "keepass", "keepassxc", "secret"]
 published: true
 published_at: 2023-03-19 09:30
+publication_name: "paiza"
 ---
 
 [前回の記事](https://zenn.dev/naokifujita/articles/password-explained)では、認証方法に関する整理とパスワード管理のツールについてシンプルかつ網羅的に記述しました。  
