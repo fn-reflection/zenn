@@ -70,7 +70,7 @@ KeePassXCでのTOTP管理は以下の手順を踏めば理解できます。
 
 ![](/images/articles/keepass-explained/totp-setting1.png =300x)
 ![](/images/articles/keepass-explained/totp-setting2.png =300x)
-*TOTPをKeePassXCで設定すると*  
+*TOTP秘密鍵をKeePassXCで設定すると*  
 
 ![](/images/articles/keepass-explained/totp-display.png =300x)
 *いつもの奴が見れるようになる*  
