@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/fn-reflection/zenn#readme",
   "dependencies": {
-    "zenn-cli": "^0.1.141"
+    "textlint": "^13.3.3",
+    "textlint-rule-preset-ja-technical-writing": "^8.0.0",
+    "zenn-cli": "^0.1.144"
   }
 }
