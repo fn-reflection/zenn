@@ -3,7 +3,9 @@ title: "言語哲学のアイデアからより良い名付けのスタンスを
 emoji: "📛"
 type: "idea"
 topics: ["naming", "philosophy", "design", "math", "logic"]
-published: false
+published: true
+published_at: 2023-08-07 06:00
+publication_name: "paiza"
 ---
 
 ## この記事を書こうと思ったきっかけ
@@ -94,7 +96,7 @@ const ENUM_VALUE_A = 'enum_value_b';
 これでは変数名自体が認識形成を阻害するようになります。  
 マジックナンバーを形式的に避けるがために、トートロジーな名前をつけるぐらいならばその値を直接参照したほうが良いということは言えそうです。 
 
-![](/images/articles/derive-naming-principle-from-philosophers-idea/tautology.png =500x)*こういった提案を批判せず受け入れるとあとが大変*  
+![](/images/articles/derive-naming-principle-from-philosophers-idea/tautology.png =500x)*こういった提案を無批判に受け入れるとあとが大変*  
 
 
 もっと言えば変数名に対する良いスタンスは、変数名に意義を一切持たせないか、変数名に明確な意義を持たせるかのいずれかであると筆者は考えています。例えば以下の通りです。  
