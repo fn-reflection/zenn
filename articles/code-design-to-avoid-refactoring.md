@@ -1,6 +1,6 @@
 ---
 title: "リファクタリングを避けるコードデザイン(Railsを題材として)"
-emoji: "🚧"
+emoji: "🏙️"
 type: "tech"
 topics: ["rails", "ruby", "design", "architecture", "simplicity"]
 published: false
