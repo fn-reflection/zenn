@@ -3,7 +3,8 @@ title: "リファクタリングを避けるコードデザイン(Railsを題材
 emoji: "🏙️"
 type: "tech"
 topics: ["rails", "ruby", "design", "architecture", "simplicity"]
-published: false
+published: true
+published_at: 2023-08-30 17:00
 publication_name: "paiza"
 ---
 
@@ -66,6 +67,9 @@ publication_name: "paiza"
   - 「転ばぬ先の杖」的な抽象化レイヤは可読性の低下か、不必要な仕様制約を引き起こす
     - 事前のインタフェース定義は、**ウォーターフォールプロセスと仕様の固定が事業的に約束できる場合のみ**使用する
       - 筆者は建築分野でそれを実行したが、ソフトウェアでそうする必然性はないと考える
+
+![](/images/articles/code-design-to-avoid-refactoring/timeless-facade.jpg =500x)
+*シンプルさをつきつめることで見出された様式は65年の時の試練に耐え、いろあせることがなく現代的でありつづける*
 
 自分がリファクタリングを考えるとき、メタレイヤーとしてこのような判断基準を使っています。  
 極めて自明なルールのように思えますが、その適用は時として慣習や風潮と対峙することになります。
