@@ -2,7 +2,7 @@
 title: "リファクタリングを避けるコードデザイン(Railsを題材として)"
 emoji: "🏙️"
 type: "tech"
-topics: ["rails", "ruby", "design", "architecture", "simplicity"]
+topics: ["rails", "ruby", "design", "architecture", "lessismore"]
 published: true
 published_at: 2023-08-30 17:00
 publication_name: "paiza"

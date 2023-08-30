@@ -2,7 +2,7 @@
 title: "ミニマルなSCSSアーキテクチャの導出とITCSS"
 emoji: "🎨"
 type: "tech"
-topics: ["css", "scss", "itcss", "cssmodules", "architecture"]
+topics: ["css", "scss", "itcss", "cssmodules", "cssinjs"]
 published: true
 published_at: 2023-08-29 11:30
 publication_name: "paiza"
