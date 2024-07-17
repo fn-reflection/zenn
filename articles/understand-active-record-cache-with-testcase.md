@@ -38,32 +38,32 @@ preload, eager_load, includesという3つのメソッドを使うことでActiv
 (Userは複数のPostをもち、Postは複数のPostCommentを持ち、PostCommentは複数のPostCommentReviewを持つ)
 ```
 User─┰─ Post1─┰─ PostComment1-1─┰─PostCommentReview1-1-1
-     ┃        ┃                  ├─PostCommentReview1-1-2
-     ┃        ┃                  └─PostCommentReview1-1-3
+     ┃        ┃                 ├─PostCommentReview1-1-2
+     ┃        ┃                 └─PostCommentReview1-1-3
      ┃        ├─ PostComment1-2─┰─PostCommentReview1-2-1
-     ┃        ┃                  ├─PostCommentReview1-2-2
-     ┃        ┃                  └─PostCommentReview1-2-3
+     ┃        ┃                 ├─PostCommentReview1-2-2
+     ┃        ┃                 └─PostCommentReview1-2-3
      ┃        └─ PostComment1-3─┰─PostCommentReview1-3-1
-     ┃                           ├─PostCommentReview1-3-2
-     ┃                           └─PostCommentReview1-3-3
+     ┃                          ├─PostCommentReview1-3-2
+     ┃                          └─PostCommentReview1-3-3
      ├─ Post2─┰─ PostComment2-1─┰─PostCommentReview2-1-1
-     ┃        ┃                  ├─PostCommentReview2-1-2
-     ┃        ┃                  └─PostCommentReview2-1-3
+     ┃        ┃                 ├─PostCommentReview2-1-2
+     ┃        ┃                 └─PostCommentReview2-1-3
      ┃        ├─ PostComment2-2─┰─PostCommentReview2-2-1
-     ┃        ┃                  ├─PostCommentReview2-2-2
-     ┃        ┃                  └─PostCommentReview2-2-3
+     ┃        ┃                 ├─PostCommentReview2-2-2
+     ┃        ┃                 └─PostCommentReview2-2-3
      ┃        └─ PostComment2-3─┰─PostCommentReview2-3-1
-     ┃                           ├─PostCommentReview2-3-2
-     ┃                           └─PostCommentReview2-3-3
+     ┃                          ├─PostCommentReview2-3-2
+     ┃                          └─PostCommentReview2-3-3
      └─ Post3─┰─ PostComment3-1─┰─PostCommentReview3-1-1
-              ┃                  ├─PostCommentReview3-1-2
-              ┃                  └─PostCommentReview3-1-3
+              ┃                 ├─PostCommentReview3-1-2
+              ┃                 └─PostCommentReview3-1-3
               ├─ PostComment3-2─┰─PostCommentReview3-2-1
-              ┃                  ├─PostCommentReview3-2-2
-              ┃                  └─PostCommentReview3-2-3
+              ┃                 ├─PostCommentReview3-2-2
+              ┃                 └─PostCommentReview3-2-3
               └─ PostComment3-3─┰─PostCommentReview3-3-1
-                                 ├─PostCommentReview3-3-2
-                                 └─PostCommentReview3-3-3
+                                ├─PostCommentReview3-3-2
+                                └─PostCommentReview3-3-3
 ```
 今回では、テストケースのログ出力がわかりやすくなるように各層が3つのアイテムを持つ(例：ユーザは3個のポストデータを持つ)としています。  
 しかし現実のデータはもっと大量のデータを持つ(例：ユーザが50個のポストデータを持つ)のが普通ですので、それをイメージしたり、コードを改変しながら実行すると理解が捗ります。
@@ -134,7 +134,7 @@ SQLの発行回数はUserが1回、Postが1回、PostCommentが1回、PostCommen
 
 ではpreloadで全て書けばよいのかというとそうではなく、preloadには限界があります。  
 ここまでは全部のデータを一括で引いてくる想定でしたが、次のテストケースでは特定のPostに紐づいたデータをpartial_describeメソッドで引いてきます。
-```rubyå
+```ruby
 # テストケース3
 user = User.preload(posts: { post_comments: :post_comment_reviews }).find_by(name: 'Alice')
 user.partial_describe(title_to_find: 'Post 2')
