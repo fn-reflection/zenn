@@ -18,7 +18,7 @@ publication_name: "paiza"
     - **よくわかってないけど(bulletの)言われるがままにincludesしている人**
   - ActiveRecordに影響を受けたORMを利用している人
 - プログラムの抽象化に興味がある人
-  - パフォーマンスを無視した抽象化(API設計)はシステムパフォーマンスを毀損することがあります
+  - パフォーマンスを無視した抽象化(API設計)は長持ちしないです
 
 ## ActiveRecordのキャッシュと3つのメソッド
 今回の記事はActiveRecordの[(SQL)キャッシュ](https://railsguides.jp/caching_with_rails.html#sql%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%A5)に焦点を当てます。  
