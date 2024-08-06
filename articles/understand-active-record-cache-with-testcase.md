@@ -3,7 +3,8 @@ title: "テストケースで体感するN+1問題とRails ActiveRecordキャッ
 emoji: "🎶"
 type: "tech"
 topics: ["performance", "rails", "activerecord", "cache", "model"]
-published: false
+published: true
+published_at: 2024-08-07 08:00
 publication_name: "paiza"
 ---
 
