@@ -43,8 +43,8 @@ KDBXファイルは生成時に暗号と復号に用いる情報(資格情報)�
     - ビジネスユーザにとっても魅力
 - ショートカットコマンドによる自動入力機能
     - ブラウザ統合されたツールよりは不便だが十分便利
-- ssh-agent機能(エンジニア向け)
-    - ssh秘密鍵をKeePassXCに内包させつつ電子署名できる
+- ssh-agent連携機能(エンジニア向け)
+    - ssh秘密鍵を暗号化データベースに内包させつつssh鍵管理を委譲することができる
     - **ssh秘密鍵を素置きしなくて良くなる**
 
 その他特筆すべき機能として以下のようなものもあります。
@@ -124,10 +124,10 @@ ssh秘密鍵を暗号化データベースに格納しつつ、データベー�
 *ssh秘密鍵を添付ファイル欄で添付して*
 
 ![](/images/articles/keepass-explained/register-ssh-secret2.png =500x)
-*データベース展開時にssh agent keyを登録するよう設定した。公開鍵(.pub)はKeePassXCが導出している*
+*データベース展開時にssh keyをssh agentに登録するよう設定した。公開鍵(.pub)はKeePassXCが導出している*
 
 ![](/images/articles/keepass-explained/register-ssh-secret3.png =500x)
-*データベースを開き直すとキーが登録された*
+*データベースを開き直すとキーがssh agentに登録された*
 
 :::details SSH Agentを使う場合のIdentityFileの指定
 ややマニアックな話になりますが、
