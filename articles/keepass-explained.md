@@ -115,9 +115,9 @@ KeePassXCでは、大きく分けて
 ```
 といったカスタムシーケンス([docs](https://keepassxc.org/docs/KeePassXC_UserGuide.html#_auto_type_actions))を定義できます。
 
-## SSH Agent機能(エンジニア向け)
-KeepassXCはSSH Agentとして動作させることができます。  
-つまりssh秘密鍵を暗号化データベースに格納しつつ、KeepassXCに電子署名をさせることで、公開鍵認証が必要なsshサーバにも接続することができます。  
+## SSH Agent連携機能(エンジニア向け)
+KeepassXCはSSH Agentと連携しssh秘密鍵を管理できます。  
+ssh秘密鍵を暗号化データベースに格納しつつ、データベースの開閉状態に応じて暗号鍵の登録・解除(ssh-add)させるような設定も行えます。
 これにより平文で秘密鍵を置くよりかは、幾分かセキュアな運用が構成できます。
 
 ![](/images/articles/keepass-explained/register-ssh-secret1.png =500x)
