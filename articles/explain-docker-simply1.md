@@ -3,7 +3,8 @@ title: "Dockerの基礎1: 最短理解のための重要な概念"
 emoji: "🐳"
 type: "tech"
 topics: ["docker", "infra", "container", "vscode"]
-published: false
+published: true
+published_at: 2025-08-12 18:00
 publication_name: "paiza"
 ---
 
